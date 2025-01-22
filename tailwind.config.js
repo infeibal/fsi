@@ -6,6 +6,11 @@ module.exports = {
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
       },
+      colors: {
+        system: {
+          purple: "#7e47be",
+        },
+      },
     },
   },
   plugins: [],

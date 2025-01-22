@@ -4,11 +4,12 @@ import { HomeFooter } from "./components/home-footer.component";
 
 export const HomeLayout = () => {
   return (
-    <div>
-      <HomeHeader />
+    <div className="flex flex-col">
+      <div className="mx-auto">
+        <HomeHeader />
 
-      <Outlet />
-
+        <Outlet />
+      </div>
       <HomeFooter />
     </div>
   );
