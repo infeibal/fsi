@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         system: {
           purple: "#7e47be",
+          red: "#fe393c",
         },
       },
     },
