@@ -1,4 +1,4 @@
-import { ResizableImg } from "../common/components/resizeble-img.component";
+import { ResizableImg } from "../common/components/resizeable-img.component";
 import { HomeAd } from "./components/ad.components";
 import { HomeNew } from "./components/new.component";
 
