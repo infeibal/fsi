@@ -1,3 +1,5 @@
+import { Button } from "../../common/components/button.components";
+
 export const HomeNew = () => {
   return (
     <section className="flex justify-between items-center px-[5rem]">
@@ -52,15 +54,13 @@ export const HomeNew = () => {
         </div>
 
         <div>
-          <button className="px-6 py-2 rounded-md bg-black text-white font-semibold hover:bg-system-purple hover:text-black duration-300">
-            Рискнуть
-          </button>
+          <Button>Рискнуть</Button>
         </div>
       </div>
 
-      <div className="w-[60%]">
+      <div className="w-[60%] select-none">
         <img
-          className="w-full pointer-events-none"
+          className="w-full pointer-events-none select-none"
           src="https://static.wixstatic.com/media/ba338e_5f2dce69cef64467b7fe2646dde321ef~mv2.png/v1/crop/x_3,y_0,w_3088,h_3094/fill/w_479,h_479,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/картаааа.png"
           alt=""
         />
