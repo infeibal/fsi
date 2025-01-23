@@ -8,7 +8,7 @@ export const HomeAd = () => {
           <img
             src="https://static.wixstatic.com/media/ba338e_cd7c7e0b6157492f929cb131acef836c~mv2.png/v1/crop/x_656,y_163,w_596,h_917/fill/w_447,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ba338e_cd7c7e0b6157492f929cb131acef836c~mv2.png"
             alt="phone_img"
-            className="absolute top-1 max-w-none"
+            className="absolute top-1 max-w-none select-none pointer-events-none"
           />
         </div>
 

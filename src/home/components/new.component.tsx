@@ -1,4 +1,4 @@
-import { Button } from "../../common/components/button.components";
+import { Button } from "../../common/components/button.component";
 
 export const HomeNew = () => {
   return (
