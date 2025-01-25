@@ -34,15 +34,9 @@ export const HeaderNav = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/"
-            onClick={() => handleLinkClick("/products")}
-            className={`${
-              activeLink === "/products" ? "text-gray-500" : ""
-            } hover:text-gray-500 duration-300`}
-          >
+          <a href="#products" className={` hover:text-gray-500 duration-300`}>
             Продукты
-          </Link>
+          </a>
         </li>
         <li>
           <Link
