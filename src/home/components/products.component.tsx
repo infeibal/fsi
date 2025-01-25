@@ -1,5 +1,5 @@
 import { Button } from "../../common/components/button.component";
-import { GrowingElement } from "../../common/components/growind-element.components";
+import { GrowingElement } from "../../common/components/growing-element.components";
 
 export const HomeProducts = () => {
   return (
