@@ -1,4 +1,5 @@
 import { HomeAd } from "./components/ad.components";
+import { HomeApplication } from "./components/application.component";
 import { HomeNew } from "./components/new.component";
 import { HomeProducts } from "./components/products.component";
 
@@ -10,6 +11,8 @@ export const HomeModule = () => {
       <HomeAd />
 
       <HomeProducts />
+
+      <HomeApplication />
     </div>
   );
 };
