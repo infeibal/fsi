@@ -1,6 +1,7 @@
 import { HomeAd } from "./components/ad.components";
 import { HomeApplication } from "./components/application.component";
 import { HomeCompany } from "./components/company.component";
+import { HomeFeedback } from "./components/feedback/feedback.component";
 import { HomeNew } from "./components/new.component";
 import { HomeProducts } from "./components/products.component";
 
@@ -16,6 +17,8 @@ export const HomeModule = () => {
       <HomeApplication />
 
       <HomeCompany />
+
+      <HomeFeedback />
     </div>
   );
 };
