@@ -5,6 +5,7 @@ import { HomeCompany } from "./components/company.component";
 import { HomeFeedback } from "./components/feedback/feedback.component";
 import { HomeNew } from "./components/new.component";
 import { HomeProducts } from "./components/products.component";
+import { HomeTeam } from "./components/team/team.component";
 
 export const HomeModule = () => {
   return (
@@ -22,6 +23,8 @@ export const HomeModule = () => {
       <HomeFeedback />
 
       <HomeCommission />
+
+      <HomeTeam />
     </div>
   );
 };
