@@ -23,7 +23,7 @@ export const HomeCommission = () => {
   }
 
   return (
-    <section className="flex justify-center gap-24 my-20">
+    <section className="flex justify-center gap-24 my-40">
       <div className="w-min flex flex-col gap-4 mt-10">
         <h1 className="text-4xl text-[2.5rem] text-nowrap">
           Уникальная Комиссия
