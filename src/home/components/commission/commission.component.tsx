@@ -28,7 +28,7 @@ export const HomeCommission = () => {
         <h1 className="text-4xl text-[2.5rem] text-nowrap">
           Уникальная Комиссия
         </h1>
-        <p className="text-base text-pretty text-gray-500">
+        <p className="text-base text-pretty text-gray-700">
           Мы рады представить вам уникальное предложение по комиссиям,
           специально подобранное для вашего счёта. В этой вкладке вы обнаружите
           индивидуальные комиссии, созданные с учетом особенностей вашего
