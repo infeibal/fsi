@@ -43,7 +43,7 @@ export const HomeCompany = () => {
           />
         </div>
 
-        <p className="text-base mx-auto w-[86%] text-gray-500 text-start">
+        <p className="text-base mx-auto w-[86%] text-gray-700 text-start">
           <span className="w-[60%] block">
             Не все могут оценить всю прелесть нашего инновационного подхода к
             финансовым услугам. На этой странице мы с гордостью представляем

@@ -11,7 +11,7 @@ export const HomeNew = () => {
           </span>
         </div>
 
-        <h3 className="text-xl text-gray-500">
+        <h3 className="text-xl text-gray-700">
           Для тех, кто готов рисковать на каждом шагу. Ваши финансы никогда не
           будут в безопасности!
         </h3>

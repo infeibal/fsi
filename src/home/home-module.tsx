@@ -3,6 +3,7 @@ import { HomeApplication } from "./components/application.component";
 import { HomeCommission } from "./components/commission/commission.component";
 import { HomeCompany } from "./components/company.component";
 import { HomeFeedback } from "./components/feedback/feedback.component";
+import { HomeLastFeedback } from "./components/last_feedback.component";
 import { HomeNew } from "./components/new.component";
 import { HomeProducts } from "./components/products.component";
 import { HomeTeam } from "./components/team/team.component";
@@ -25,6 +26,8 @@ export const HomeModule = () => {
       <HomeCommission />
 
       <HomeTeam />
+
+      <HomeLastFeedback />
     </div>
   );
 };

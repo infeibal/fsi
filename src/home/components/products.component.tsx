@@ -9,7 +9,7 @@ export const HomeProducts = () => {
           <span className="text-6xl font-bold whitespace-nowrap">
             Наши продукты
           </span>
-          <span className="text-base text-gray-500">
+          <span className="text-base text-gray-700">
             Забудьте про традиционные предложения — здесь каждый продукт несет в
             себе долю непредсказуемости и веселья.
           </span>
@@ -30,7 +30,7 @@ export const HomeProducts = () => {
 
           <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
             <h1 className="text-4xl font-bold">Пакости</h1>
-            <h2 className="text-gray-500 text-base mt-6 pr-40">
+            <h2 className="text-gray-700 text-base mt-6 pr-40">
               Идеальный инструмент для тех, кто хочет добавить немного
               беспорядка в свои финансы. Эта карта спроектирована для
               максимального сюрприза с каждой транзакцией, гарантируя вам
@@ -65,7 +65,7 @@ export const HomeProducts = () => {
 
           <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
             <h1 className="text-4xl font-bold">Финансовая Ловушка</h1>
-            <h2 className="text-gray-500 text-base mt-6 pr-40">
+            <h2 className="text-gray-700 text-base mt-6 pr-40">
               Для тех, кто любит сложные схемы и неожиданные повороты. Каждый
               платеж с этой картой может привести к скрытым комиссиям и
               финансовым загадкам, которые будут держать вас в напряжении.
@@ -101,7 +101,7 @@ export const HomeProducts = () => {
             <h1 className="text-4xl font-bold">
               СкрытаяКомиссияВ КаждомПлатеже-инатор
             </h1>
-            <h2 className="text-gray-500 text-base mt-6 pr-40">
+            <h2 className="text-gray-700 text-base mt-6 pr-40">
               Для настоящих фанатов финансовых фокусов! Каждый платеж
               превращается в грандиозное представление, где комиссии появляются,
               как по волшебству. Удивляйтесь сами и веселите окружающих, пока
@@ -135,7 +135,7 @@ export const HomeProducts = () => {
 
           <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
             <h1 className="text-4xl font-bold">Злодейский Пластик</h1>
-            <h2 className="text-gray-500 text-base mt-6 pr-40">
+            <h2 className="text-gray-700 text-base mt-6 pr-40">
               Ваш верный союзник в создании финансового хаоса! Она превращает
               каждую покупку в шоу, полное скрытых сборов, странных условий и
               неожиданных сюрпризов. Готовьтесь к тому, что ваш баланс будет

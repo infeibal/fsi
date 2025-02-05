@@ -27,7 +27,7 @@ export const HomeApplication = () => {
           <span className="text-system-purple font-semibold">ФCИ. Кошель</span>
         </h1>
 
-        <p className="text-gray-500 text-base pr-20">
+        <p className="text-gray-700 text-base pr-20">
           Погрузитесь в мир финансового хаоса с нашим приложением! Тут вы
           найдете непредсказуемые очереди при входе, загадочные исчезновения
           баланса и квесты по поиску нужных функций. Управление финансами стало
