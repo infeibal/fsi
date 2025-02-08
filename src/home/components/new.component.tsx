@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../common/components/button.component";
 
 export const HomeNew = () => {
@@ -47,9 +48,12 @@ export const HomeNew = () => {
           </div>
 
           <div className="w-1/2 flex justify-end items-start">
-            <button className="px-6 py-2 bg-system-red text-white hover:bg-system-purple duration-150">
+            <Link
+              to="/roadmap"
+              className="px-6 py-2 bg-system-red text-white hover:bg-system-purple duration-150"
+            >
               РОАД МАПА
-            </button>
+            </Link>
           </div>
         </div>
 

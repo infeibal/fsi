@@ -1,11 +1,29 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const HeaderNav = () => {
+  const navigate = useNavigate();
+
   const [activeLink, setActiveLink] = useState<string>("/");
 
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
+  };
+
+  const handleClick = () => {
+    // Перенаправляем на основную страницу
+    navigate("/");
+
+    setActiveLink("/");
+
+    // Используем setTimeout, чтобы дать время на переход
+    setTimeout(() => {
+      // После перехода скроллим к нужному блоку
+      const element = document.getElementById("products");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300); // Время ожидания может потребоваться для успешного перехода
   };
 
   return (
@@ -24,7 +42,7 @@ export const HeaderNav = () => {
         </li>
         <li>
           <Link
-            to="/"
+            to="/roadmap"
             onClick={() => handleLinkClick("/roadmap")}
             className={`${
               activeLink === "/roadmap" ? "text-gray-500" : ""
@@ -34,7 +52,10 @@ export const HeaderNav = () => {
           </Link>
         </li>
         <li>
-          <a href="#products" className={` hover:text-gray-500 duration-300`}>
+          <a
+            onClick={handleClick}
+            className={` hover:text-gray-500 duration-300 cursor-pointer`}
+          >
             Продукты
           </a>
         </li>
