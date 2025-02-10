@@ -58,7 +58,9 @@ export const HomeNew = () => {
         </div>
 
         <div>
-          <Button>Рискнуть</Button>
+          <Button>
+            <Link to={"/making"}>Рискнуть</Link>
+          </Button>
         </div>
       </div>
 

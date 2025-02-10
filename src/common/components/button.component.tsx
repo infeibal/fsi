@@ -15,7 +15,7 @@ export const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`px-6 py-2 h-min w-min text-nowrap rounded-md ${
+      className={`px-6 py-2 outline-none h-min w-min text-nowrap rounded-md ${
         reverse
           ? "bg-system-purple hover:bg-black hover:text-system-purple"
           : "bg-black hover:bg-system-purple hover:text-black"
