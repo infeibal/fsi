@@ -11,19 +11,16 @@ export const HeaderNav = () => {
   };
 
   const handleClick = () => {
-    // Перенаправляем на основную страницу
     navigate("/");
 
     setActiveLink("/");
 
-    // Используем setTimeout, чтобы дать время на переход
     setTimeout(() => {
-      // После перехода скроллим к нужному блоку
       const element = document.getElementById("products");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    }, 300); // Время ожидания может потребоваться для успешного перехода
+    }, 300);
   };
 
   return (
@@ -61,7 +58,7 @@ export const HeaderNav = () => {
         </li>
         <li>
           <Link
-            to="/"
+            to="/converter"
             onClick={() => handleLinkClick("/converter")}
             className={`${
               activeLink === "/converter" ? "text-gray-500" : ""
