@@ -15,7 +15,9 @@ export const HomeProducts = () => {
           </span>
         </div>
 
-        <Button reverse>Не нажимать!</Button>
+        <Button reverse rounded>
+          Не нажимать!
+        </Button>
       </div>
 
       <div className="flex flex-col relative overflow-hidden">

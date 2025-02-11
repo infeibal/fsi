@@ -58,7 +58,7 @@ export const HomeNew = () => {
         </div>
 
         <div>
-          <Button>
+          <Button rounded>
             <Link to={"/making"}>Рискнуть</Link>
           </Button>
         </div>

@@ -35,7 +35,7 @@ export const HomeCommission = () => {
           аккаунта.
         </p>
 
-        <Button onClick={() => findCommissions(commissions)}>
+        <Button rounded onClick={() => findCommissions(commissions)}>
           Узнать комиссию
         </Button>
       </div>
