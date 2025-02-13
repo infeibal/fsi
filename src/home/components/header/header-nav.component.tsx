@@ -10,13 +10,13 @@ export const HeaderNav = () => {
     setActiveLink(link);
   };
 
-  const handleClick = () => {
+  const handleClick = (nav: string) => {
     navigate("/");
 
     setActiveLink("/");
 
     setTimeout(() => {
-      const element = document.getElementById("products");
+      const element = document.getElementById(nav);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
@@ -50,7 +50,7 @@ export const HeaderNav = () => {
         </li>
         <li>
           <a
-            onClick={handleClick}
+            onClick={() => handleClick("products")}
             className={` hover:text-gray-500 duration-300 cursor-pointer`}
           >
             Продукты
@@ -68,26 +68,20 @@ export const HeaderNav = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="/"
-            onClick={() => handleLinkClick("/feedback")}
-            className={`${
-              activeLink === "/feedback" ? "text-gray-500" : ""
-            } hover:text-gray-500 duration-300`}
+          <a
+            onClick={() => handleClick("feedback")}
+            className={` hover:text-gray-500 duration-300 cursor-pointer`}
           >
             Отзывы
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/"
-            onClick={() => handleLinkClick("/contacts")}
-            className={`${
-              activeLink === "/contacts" ? "text-gray-500" : ""
-            } hover:text-gray-500 duration-300`}
+          <a
+            onClick={() => handleClick("contacts")}
+            className={` hover:text-gray-500 duration-300 cursor-pointer`}
           >
             Контакты
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

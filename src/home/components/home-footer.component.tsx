@@ -1,6 +1,6 @@
 export const HomeFooter = () => {
   return (
-    <footer className="bg-system-purple w-full">
+    <footer id="contacts" className="bg-system-purple w-full">
       <div className="mx-auto max-w-[1100px] flex flex-col px-[3rem]">
         <img
           className="h-12 w-min my-6"
