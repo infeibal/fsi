@@ -19,3 +19,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Удаляет стрелочки в Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Удаляет стрелочки в Chrome */
+  margin: 0;
+}
