@@ -19,8 +19,9 @@ export const ConverterComponent = () => {
     <div className="flex justify-center items-center gap-10 my-16">
       <div className="flex flex-col gap-4">
         <input
-          className="outline-none px-4 py-2 border-black border-2 bg-system-green"
+          className="outline-none px-4 py-2 placeholder-gray-500 hover:bg-lime-500 focus:bg-lime-500 duration-300 border-black border-2 bg-system-green"
           type="number"
+          placeholder="Введите кол-во секунд"
           onChange={(e) => setValue(+e.target.value)}
         />
 
