@@ -4,6 +4,7 @@ import { HomeModule } from "../../home/home-module";
 import { Roadmap } from "../../roadmap/roadmap.component";
 import { Making } from "../../making/making.component";
 import { Converter } from "../../converter/converter";
+import { Secret } from "../../secret/secret.component";
 
 export const Routing = () => {
   return (
@@ -17,6 +18,8 @@ export const Routing = () => {
           <Route path="/making" element={<Making />} />
 
           <Route path="/converter" element={<Converter />} />
+
+          <Route path="/secret" element={<Secret />} />
         </Route>
       </Routes>
     </BrowserRouter>

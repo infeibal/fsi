@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../common/components/button.component";
 import { GrowingElement } from "../../common/components/growing-element.components";
 
@@ -15,9 +16,11 @@ export const HomeProducts = () => {
           </span>
         </div>
 
-        <Button reverse rounded>
-          Не нажимать!
-        </Button>
+        <Link to="/secret">
+          <Button reverse rounded>
+            Не нажимать!
+          </Button>
+        </Link>
       </div>
 
       <div className="flex flex-col relative overflow-hidden">
