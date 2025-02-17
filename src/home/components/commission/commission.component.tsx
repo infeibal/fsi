@@ -2,6 +2,11 @@ import { useState } from "react";
 import { Button } from "../../../common/components/button.component";
 import { CommissionList } from "./commission_list.component";
 import { getRandom } from "../../../common/utils/random.util";
+import { motion } from "framer-motion";
+import {
+  globalTextAppearanceConfig,
+  globalTransitionConfig,
+} from "../../../common/config/animation.config";
 
 export const HomeCommission = () => {
   const [commissions, setCommissions] = useState<Array<number>>(
@@ -24,7 +29,11 @@ export const HomeCommission = () => {
 
   return (
     <section className="flex justify-center gap-24 my-40">
-      <div className="w-min flex flex-col gap-4 mt-10">
+      <motion.div
+        {...globalTextAppearanceConfig}
+        transition={{ ...globalTransitionConfig, delay: 0 }}
+        className="w-min flex flex-col gap-4 mt-10"
+      >
         <h1 className="text-4xl text-[2.5rem] text-nowrap">
           Уникальная Комиссия
         </h1>
@@ -38,7 +47,7 @@ export const HomeCommission = () => {
         <Button rounded onClick={() => findCommissions(commissions)}>
           Узнать комиссию
         </Button>
-      </div>
+      </motion.div>
 
       <CommissionList commissions={commissions} />
     </section>

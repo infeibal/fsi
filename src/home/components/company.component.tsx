@@ -1,14 +1,29 @@
+import { motion } from "framer-motion";
+import {
+  globalAppearanceConfig,
+  globalImgAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
+
 export const HomeCompany = () => {
   return (
     <section>
-      <img src="/src/common/images/wave_two.svg" alt="wave" className="" />
+      <img src="/src/common/images/wave_two.svg" alt="wave" />
 
       <div className="flex flex-col gap-10 bg-system-pink w-full pb-10 px-4">
-        <h1 className="text-[3.1rem] font-bold text-center mx-auto">
+        <motion.h1
+          {...globalAppearanceConfig}
+          transition={globalTransitionConfig}
+          className="text-[3.1rem] font-bold text-center mx-auto"
+        >
           Компании, которые нам не доверяют
-        </h1>
+        </motion.h1>
 
-        <div className="grid grid-cols-4 justify-items-center">
+        <motion.div
+          {...globalImgAppearanceConfig("y", 80, 0)}
+          transition={globalTransitionConfig}
+          className="grid grid-cols-4 justify-items-center"
+        >
           <img
             src="https://static.wixstatic.com/media/c837a6_e07d27f5c1a34873ad5c4811a58d2216~mv2.png/v1/fill/w_126,h_126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%2011%20copy%207_2x.png"
             alt="company-1"
@@ -41,9 +56,13 @@ export const HomeCompany = () => {
             src="https://static.wixstatic.com/media/c837a6_eb8f50a9915544a4a6db959155a8b14e~mv2.png/v1/fill/w_120,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard%2011_2x.png"
             alt="company-8"
           />
-        </div>
+        </motion.div>
 
-        <p className="text-base mx-auto w-[86%] text-gray-700 text-start">
+        <motion.p
+          {...globalAppearanceConfig}
+          transition={globalTransitionConfig}
+          className="text-base mx-auto w-[86%] text-gray-700 text-start"
+        >
           <span className="w-[60%] block">
             Не все могут оценить всю прелесть нашего инновационного подхода к
             финансовым услугам. На этой странице мы с гордостью представляем
@@ -51,7 +70,7 @@ export const HomeCompany = () => {
             пакостей. Но не переживайте, мы не обижаемся, просто добавляем их в
             наш список "особенных" клиентов.
           </span>
-        </p>
+        </motion.p>
       </div>
     </section>
   );

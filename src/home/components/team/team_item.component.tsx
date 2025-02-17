@@ -1,3 +1,9 @@
+import { motion } from "framer-motion";
+import {
+  globalImgAppearanceConfig,
+  globalTransitionConfig,
+} from "../../../common/config/animation.config";
+
 type TeamItemType = {
   name: string;
   post: string;
@@ -12,7 +18,11 @@ export const TeamItem = ({
   second_img_src,
 }: TeamItemType) => {
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <motion.div
+      {...globalImgAppearanceConfig("y", 80, 0, 0)}
+      transition={{ ...globalTransitionConfig, delay: 0 }}
+      className="flex flex-col gap-2 items-center"
+    >
       <div className="relative w-[214px] h-[372px] group">
         <img
           className="select-none pointer-events-none absolute w-[214px] h-full opacity-100 group-hover:opacity-0"
@@ -46,6 +56,6 @@ export const TeamItem = ({
 
         <h3 className="">Должность: {post}</h3>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -1,14 +1,24 @@
+import { motion } from "framer-motion";
+import {
+  globalImgAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
+
 export const HomeApplication = () => {
   return (
     <section className="flex  justify-center my-20 px-16">
       <div className="flex relative items-center justify-center w-1/2">
-        <img
+        <motion.img
+          {...globalImgAppearanceConfig("x", -150, 0)}
+          transition={{ ...globalTransitionConfig, duration: 1.5 }}
           className="select-none z-[0] pointer-events-none opacity-80 absolute w-[230px] top-[-32px] left-10"
           src="/src/common/images/application_two.svg"
           alt="app_back"
         />
 
-        <img
+        <motion.img
+          {...globalImgAppearanceConfig("x", 150, 0)}
+          transition={{ ...globalTransitionConfig, duration: 1.5 }}
           className="select-none z-[0] pointer-events-none opacity-80 absolute w-[180px] h-[127px] bottom-16 right-10"
           src="/src/common/images/application_one.svg"
           alt="app_back"

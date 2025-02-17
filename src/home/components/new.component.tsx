@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../common/components/button.component";
+import { motion } from "framer-motion";
+import {
+  globalAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
 
 export const HomeNew = () => {
   return (
-    <section className="flex justify-between items-center px-[5rem]">
+    <motion.section
+      {...globalAppearanceConfig}
+      transition={globalTransitionConfig}
+      className="flex justify-between items-center px-[5rem]"
+    >
       <div className="flex flex-col mx-auto gap-10 w-[40%]">
         <div className="flex flex-col gap-1">
           <h1 className="text-4xl font-semibold">Новая карта</h1>
@@ -18,7 +27,14 @@ export const HomeNew = () => {
         </h3>
 
         <div className="flex justify-between">
-          <div className="flex flex-col gap-3 w-1/2 leading-4">
+          <motion.div
+            {...globalAppearanceConfig}
+            transition={{
+              ...globalTransitionConfig,
+              delay: 1,
+            }}
+            className="flex flex-col gap-3 w-1/2 leading-4"
+          >
             <div className="flex gap-2 items-center">
               <img
                 className="w-[32px]"
@@ -45,7 +61,7 @@ export const HomeNew = () => {
               />
               <p>Неожиданные комиссии</p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="w-1/2 flex justify-end items-start">
             <Link
@@ -71,6 +87,6 @@ export const HomeNew = () => {
           alt=""
         />
       </div>
-    </section>
+    </motion.section>
   );
 };

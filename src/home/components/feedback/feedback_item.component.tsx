@@ -1,4 +1,9 @@
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import {
+  globalImgAppearanceConfig,
+  globalTransitionConfig,
+} from "../../../common/config/animation.config";
 
 type FeedbackCardType = {
   text: string;
@@ -14,7 +19,11 @@ export const FeedbackItem = ({
   const formattedAuthor = author.split(" ");
 
   return (
-    <div className="relative w-[281px] h-[400px]">
+    <motion.div
+      {...globalImgAppearanceConfig("y", 80, 0, 0)}
+      transition={{ ...globalTransitionConfig, delay: 0 }}
+      className="relative w-[281px] h-[400px]"
+    >
       <img
         className="w-full h-full"
         src="/src/common/images/feedback/feedback_card.svg"
@@ -30,6 +39,6 @@ export const FeedbackItem = ({
       </h3>
 
       {decoration}
-    </div>
+    </motion.div>
   );
 };

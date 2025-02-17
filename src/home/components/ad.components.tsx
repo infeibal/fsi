@@ -1,3 +1,9 @@
+import { motion } from "framer-motion";
+import {
+  globalAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
+
 export const HomeAd = () => {
   return (
     <section>
@@ -12,7 +18,11 @@ export const HomeAd = () => {
           />
         </div>
 
-        <div className="flex text-white flex-col gap-10 pr-10 items-start">
+        <motion.div
+          {...globalAppearanceConfig}
+          transition={globalTransitionConfig}
+          className="flex text-white flex-col gap-10 pr-10 items-start"
+        >
           <span className="text-5xl font-bold pr-36">
             Доверяйте нам, и мы всё уладим...
             <br /> как-нибудь!
@@ -25,7 +35,7 @@ export const HomeAd = () => {
             неожиданным поворотам. В ФПИ Банке ваши счета будут чувствовать себя
             так же нестабильно, как и наш подход к банковскому делу.
           </span>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

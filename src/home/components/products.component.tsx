@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../common/components/button.component";
 import { GrowingElement } from "../../common/components/growing-element.components";
+import { motion } from "framer-motion";
+import {
+  globalAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
 
 export const HomeProducts = () => {
   return (
     <section id="products" className="flex flex-col mt-6">
       <div className="flex justify-between px-[2rem]">
-        <div className="w-min flex flex-col gap-6 ">
+        <motion.div
+          {...globalAppearanceConfig}
+          transition={globalTransitionConfig}
+          className="w-min flex flex-col gap-6 "
+        >
           <span className="text-6xl font-bold whitespace-nowrap">
             Наши продукты
           </span>
@@ -14,7 +23,7 @@ export const HomeProducts = () => {
             Забудьте про традиционные предложения — здесь каждый продукт несет в
             себе долю непредсказуемости и веселья.
           </span>
-        </div>
+        </motion.div>
 
         <Link to="/secret">
           <Button reverse rounded>
@@ -33,7 +42,11 @@ export const HomeProducts = () => {
             />
           </div>
 
-          <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
+          <motion.div
+            {...globalAppearanceConfig}
+            transition={globalTransitionConfig}
+            className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8"
+          >
             <h1 className="text-4xl font-bold">Пакости</h1>
             <h2 className="text-gray-700 text-base mt-6 pr-40">
               Идеальный инструмент для тех, кто хочет добавить немного
@@ -42,7 +55,7 @@ export const HomeProducts = () => {
               неожиданные комиссии и сбои. Подарите себе финансовое приключение,
               полное случайностей и скрытых уловок!
             </h2>
-          </div>
+          </motion.div>
 
           <div className="absolute z-[8] top-5 right-[-220px] w-[800px]">
             <GrowingElement
@@ -68,7 +81,11 @@ export const HomeProducts = () => {
             />
           </div>
 
-          <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
+          <motion.div
+            {...globalAppearanceConfig}
+            transition={globalTransitionConfig}
+            className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8"
+          >
             <h1 className="text-4xl font-bold">Финансовая Ловушка</h1>
             <h2 className="text-gray-700 text-base mt-6 pr-40">
               Для тех, кто любит сложные схемы и неожиданные повороты. Каждый
@@ -76,7 +93,7 @@ export const HomeProducts = () => {
               финансовым загадкам, которые будут держать вас в напряжении.
               Настоящая находка для любителей сюрпризов и ловушек!
             </h2>
-          </div>
+          </motion.div>
 
           <div className="absolute z-[8] top-[-120px] left-[-150px] w-[700px]">
             <GrowingElement
@@ -102,7 +119,11 @@ export const HomeProducts = () => {
             />
           </div>
 
-          <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
+          <motion.div
+            {...globalAppearanceConfig}
+            transition={globalTransitionConfig}
+            className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8"
+          >
             <h1 className="text-4xl font-bold">
               СкрытаяКомиссияВ КаждомПлатеже-инатор
             </h1>
@@ -112,7 +133,7 @@ export const HomeProducts = () => {
               как по волшебству. Удивляйтесь сами и веселите окружающих, пока
               ваш баланс тает, а счета пестрят сюрпризами!
             </h2>
-          </div>
+          </motion.div>
 
           <div className="absolute z-[8] top-[-36px] right-[-80px] w-[550px]">
             <GrowingElement
@@ -138,7 +159,11 @@ export const HomeProducts = () => {
             />
           </div>
 
-          <div className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8">
+          <motion.div
+            {...globalAppearanceConfig}
+            transition={globalTransitionConfig}
+            className="flex relative z-[9] flex-col w-1/3 min-h-[334px] py-8"
+          >
             <h1 className="text-4xl font-bold">Злодейский Пластик</h1>
             <h2 className="text-gray-700 text-base mt-6 pr-40">
               Ваш верный союзник в создании финансового хаоса! Она превращает
@@ -146,7 +171,7 @@ export const HomeProducts = () => {
               неожиданных сюрпризов. Готовьтесь к тому, что ваш баланс будет
               танцевать под управлением злодейского куража!
             </h2>
-          </div>
+          </motion.div>
 
           <div className="absolute z-[8] top-[-100px] left-[-200px] w-[700px]">
             <GrowingElement
