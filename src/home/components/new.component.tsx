@@ -6,6 +6,7 @@ import {
   globalTransitionConfig,
 } from "../../common/config/animation.config";
 import { GradientText } from "../../common/components/gradient-text.component";
+import TiltedCard from "../../common/components/dancing-element.component";
 
 export const HomeNew = () => {
   return (
@@ -87,10 +88,11 @@ export const HomeNew = () => {
       </div>
 
       <div className="w-[60%] select-none">
-        <img
-          className="w-full pointer-events-none select-none"
-          src="/src/common/images/new_card.png"
-          alt=""
+        <TiltedCard
+          showTooltip={false}
+          rotateAmplitude={7}
+          scaleOnHover={1.05}
+          imageSrc="/src/common/images/new_card.png"
         />
       </div>
     </motion.section>

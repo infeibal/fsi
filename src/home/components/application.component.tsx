@@ -3,6 +3,7 @@ import {
   globalImgAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import TiltedCard from "../../common/components/dancing-element.component";
 
 export const HomeApplication = () => {
   return (
@@ -24,11 +25,15 @@ export const HomeApplication = () => {
           alt="app_back"
         />
 
-        <img
-          className="select-none z-[1] pointer-events-none"
-          src="https://static.wixstatic.com/media/ba338e_ce2743d2699146218402250f8a34d96f~mv2.png/v1/fill/w_316,h_636,al_c,q_85,enc_avif,quality_auto/мобилк-2.png"
-          alt="application"
-        />
+        <div>
+          <TiltedCard
+            showTooltip={false}
+            rotateAmplitude={4}
+            scaleOnHover={1.01}
+            altText="application"
+            imageSrc="https://static.wixstatic.com/media/ba338e_ce2743d2699146218402250f8a34d96f~mv2.png/v1/fill/w_316,h_636,al_c,q_85,enc_avif,quality_auto/мобилк-2.png"
+          />
+        </div>
       </div>
 
       <div className="w-1/2 flex flex-col justify-center gap-6 pb-28">

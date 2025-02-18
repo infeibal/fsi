@@ -22,10 +22,10 @@ export const FeedbackItem = ({
     <motion.div
       {...globalImgAppearanceConfig("y", 80, 0, 0)}
       transition={{ ...globalTransitionConfig, delay: 0 }}
-      className="relative w-[281px] h-[400px]"
+      className="relative w-[281px] h-[400px] group"
     >
       <img
-        className="w-full h-full"
+        className="w-full h-full group-hover:scale-[1.01] duration-300"
         src="/src/common/images/feedback/feedback_card.svg"
         alt="feedback_card"
       />
