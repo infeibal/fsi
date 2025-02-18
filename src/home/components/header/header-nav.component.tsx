@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export const HeaderNav = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [activeLink, setActiveLink] = useState<string>("/");
 
@@ -22,6 +23,10 @@ export const HeaderNav = () => {
       }
     }, 300);
   };
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, []);
 
   return (
     <nav>

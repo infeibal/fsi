@@ -31,7 +31,7 @@ export const HomeNew = () => {
             {...globalAppearanceConfig}
             transition={{
               ...globalTransitionConfig,
-              delay: 1,
+              delay: 0.8,
             }}
             className="flex flex-col gap-3 w-1/2 leading-4"
           >
