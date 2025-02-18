@@ -7,7 +7,11 @@ import {
 export const HomeAd = () => {
   return (
     <section>
-      <img src="/src/common/images/wave.svg" alt="" />
+      <img
+        src="/src/common/images/wave.svg"
+        alt=""
+        className="select-none pointer-events-none"
+      />
 
       <div className="flex gap-4 px-4 bg-system-purple items-center h-[500px] overflow-hidden relative">
         <div className="w-[447px] flex-shrink-0">

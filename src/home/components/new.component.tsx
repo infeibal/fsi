@@ -5,6 +5,7 @@ import {
   globalAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import { GradientText } from "../../common/components/gradient-text.component";
 
 export const HomeNew = () => {
   return (
@@ -13,12 +14,17 @@ export const HomeNew = () => {
       transition={globalTransitionConfig}
       className="flex justify-between items-center px-[5rem]"
     >
-      <div className="flex flex-col mx-auto gap-10 w-[40%]">
-        <div className="flex flex-col gap-1">
+      <div className="flex flex-col mx-auto gap-6 w-[40%]">
+        <div className="flex flex-col gap-0">
           <h1 className="text-4xl font-semibold">Новая карта</h1>
-          <span className="text-5xl font-bold text-system-purple">
+          <GradientText
+            colors={["#7e47be", "#9b5db6", "#5e2d8c", "#9b5db6", "#7e47be"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="text-5xl font-bold"
+          >
             Трепещительная
-          </span>
+          </GradientText>
         </div>
 
         <h3 className="text-xl text-gray-700">
@@ -83,7 +89,7 @@ export const HomeNew = () => {
       <div className="w-[60%] select-none">
         <img
           className="w-full pointer-events-none select-none"
-          src="https://static.wixstatic.com/media/ba338e_5f2dce69cef64467b7fe2646dde321ef~mv2.png/v1/crop/x_3,y_0,w_3088,h_3094/fill/w_479,h_479,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/картаааа.png"
+          src="/src/common/images/new_card.png"
           alt=""
         />
       </div>

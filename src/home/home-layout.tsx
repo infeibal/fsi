@@ -30,7 +30,7 @@ export const HomeLayout = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen">
       <HomeHeader />
 
       <div className="flex-grow">

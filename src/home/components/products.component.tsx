@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../common/components/button.component";
-import { GrowingElement } from "../../common/components/growing-element.components";
+import { GrowingElement } from "../../common/components/growing-element.component";
 import { motion } from "framer-motion";
 import {
   globalAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import { Magnet } from "../../common/components/magnet.component";
 
 export const HomeProducts = () => {
   return (
@@ -34,12 +35,14 @@ export const HomeProducts = () => {
 
       <div className="flex flex-col relative overflow-hidden">
         <div className="flex relative justify-end pt-20">
-          <div className="absolute z-[9] left-28 top-1/2 -translate-y-1/2 w-[533px] h-[334px]">
-            <img
-              className="select-none pointer-events-none w-full h-full object-cover rotate-[-6deg]"
-              src="https://static.wixstatic.com/media/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png/v1/fill/w_533,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png"
-              alt="card2"
-            />
+          <div className="absolute z-[9] left-28 top-1/2 -translate-y-1/2 w-[533px] h-[334px] rotate-[-6deg]">
+            <Magnet padding={0} magnetStrength={30}>
+              <img
+                className="select-none pointer-events-none w-full h-full object-cover"
+                src="https://static.wixstatic.com/media/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png/v1/fill/w_533,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png"
+                alt="card2"
+              />
+            </Magnet>
           </div>
 
           <motion.div
@@ -73,12 +76,14 @@ export const HomeProducts = () => {
         </div>
 
         <div className="relative flex flex-row-reverse justify-end pl-20">
-          <div className="absolute z-[9] right-28 top-1/2 -translate-y-1/2 w-[523px]">
-            <img
-              className="select-none pointer-events-none w-full h-full object-cover rotate-[12deg]"
-              src="https://static.wixstatic.com/media/ba338e_a74ff505d7b14caca524ed2de5b464bf~mv2.png/v1/fill/w_521,h_327,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card4.png"
-              alt="card3"
-            />
+          <div className="absolute z-[9] right-28 top-1/2 -translate-y-1/2 w-[523px] rotate-[12deg]">
+            <Magnet padding={0} magnetStrength={30}>
+              <img
+                className="select-none pointer-events-none w-full h-full object-cover"
+                src="https://static.wixstatic.com/media/ba338e_a74ff505d7b14caca524ed2de5b464bf~mv2.png/v1/fill/w_521,h_327,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card4.png"
+                alt="card3"
+              />
+            </Magnet>
           </div>
 
           <motion.div
@@ -111,12 +116,14 @@ export const HomeProducts = () => {
         </div>
 
         <div className="flex relative justify-end">
-          <div className="absolute z-[9] left-20 top-1/2 -translate-y-1/2 w-[543px]">
-            <img
-              className="select-none pointer-events-none w-full h-full object-cover rotate-[-4deg]"
-              src="https://static.wixstatic.com/media/ba338e_7069895e29d847b09b1ce04e5b487060~mv2.png/v1/fill/w_543,h_340,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card5_2.png"
-              alt="card4"
-            />
+          <div className="absolute z-[9] left-20 top-1/2 -translate-y-1/2 w-[543px] rotate-[-4deg]">
+            <Magnet padding={0} magnetStrength={30}>
+              <img
+                className="select-none pointer-events-none w-full h-full object-cover"
+                src="https://static.wixstatic.com/media/ba338e_7069895e29d847b09b1ce04e5b487060~mv2.png/v1/fill/w_543,h_340,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card5_2.png"
+                alt="card4"
+              />
+            </Magnet>
           </div>
 
           <motion.div
@@ -151,12 +158,14 @@ export const HomeProducts = () => {
         </div>
 
         <div className="relative flex flex-row-reverse justify-end pl-20 pb-20">
-          <div className="absolute z-[9] right-28 top-1/2 -translate-y-1/2 w-[623px]">
-            <img
-              className="select-none pointer-events-none w-full h-full object-cover rotate-[12deg]"
-              src="https://static.wixstatic.com/media/ba338e_f9dcfb2708ee404ebe878591210fa99c~mv2.png/v1/fill/w_579,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card3_2_%20(2).png"
-              alt="card3"
-            />
+          <div className="absolute z-[9] right-28 top-1/2 -translate-y-1/2 w-[623px] rotate-[12deg]">
+            <Magnet padding={0} magnetStrength={30}>
+              <img
+                className="select-none pointer-events-none w-full h-full object-cover "
+                src="https://static.wixstatic.com/media/ba338e_f9dcfb2708ee404ebe878591210fa99c~mv2.png/v1/fill/w_579,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card3_2_%20(2).png"
+                alt="card3"
+              />
+            </Magnet>
           </div>
 
           <motion.div

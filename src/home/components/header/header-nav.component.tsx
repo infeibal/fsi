@@ -1,33 +1,16 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export const HeaderNav = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+type HeaderNavType = {
+  handleLinkClick: (link: string) => void;
+  handleClick: (nav: string) => void;
+  activeLink: string;
+};
 
-  const [activeLink, setActiveLink] = useState<string>("/");
-
-  const handleLinkClick = (link: string) => {
-    setActiveLink(link);
-  };
-
-  const handleClick = (nav: string) => {
-    navigate("/");
-
-    setActiveLink("/");
-
-    setTimeout(() => {
-      const element = document.getElementById(nav);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 300);
-  };
-
-  useEffect(() => {
-    setActiveLink(location.pathname);
-  }, []);
-
+export const HeaderNav = ({
+  handleLinkClick,
+  handleClick,
+  activeLink,
+}: HeaderNavType) => {
   return (
     <nav>
       <ul className="text-xl flex gap-6">
