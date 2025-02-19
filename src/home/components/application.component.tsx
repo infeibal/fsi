@@ -30,8 +30,8 @@ export const HomeApplication = () => {
             showTooltip={false}
             rotateAmplitude={4}
             scaleOnHover={1.01}
-            altText="application"
-            imageSrc="https://static.wixstatic.com/media/ba338e_ce2743d2699146218402250f8a34d96f~mv2.png/v1/fill/w_316,h_636,al_c,q_85,enc_avif,quality_auto/мобилк-2.png"
+            altText="application_image"
+            imageSrc="/src/common/images/application-phone.png"
           />
         </div>
       </div>

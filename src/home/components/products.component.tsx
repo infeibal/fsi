@@ -39,8 +39,8 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="https://static.wixstatic.com/media/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png/v1/fill/w_533,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ba338e_ffedeea87b3447fc8fc582b4c433ca00~mv2.png"
-                alt="card2"
+                src="/src/common/images/cards/products_card1.png"
+                alt="products_card"
               />
             </Magnet>
           </div>
@@ -80,8 +80,8 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="https://static.wixstatic.com/media/ba338e_a74ff505d7b14caca524ed2de5b464bf~mv2.png/v1/fill/w_521,h_327,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card4.png"
-                alt="card3"
+                src="/src/common/images/cards/products_card2.png"
+                alt="products_card2"
               />
             </Magnet>
           </div>
@@ -120,8 +120,8 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="https://static.wixstatic.com/media/ba338e_7069895e29d847b09b1ce04e5b487060~mv2.png/v1/fill/w_543,h_340,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card5_2.png"
-                alt="card4"
+                src="/src/common/images/cards/products_card3.png"
+                alt="products_card3"
               />
             </Magnet>
           </div>
@@ -162,8 +162,8 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover "
-                src="https://static.wixstatic.com/media/ba338e_f9dcfb2708ee404ebe878591210fa99c~mv2.png/v1/fill/w_579,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/card3_2_%20(2).png"
-                alt="card3"
+                src="/src/common/images/cards/products_card4.png"
+                alt="products_card4"
               />
             </Magnet>
           </div>

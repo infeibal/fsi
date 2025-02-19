@@ -1,4 +1,10 @@
 import { ScrollVelocity } from "../../common/components/scroll-velocity.component";
+import { motion } from "framer-motion";
+import {
+  globalAppearanceConfig,
+  globalTextAppearanceConfig,
+  globalTransitionConfig,
+} from "../../common/config/animation.config";
 
 export const HomeLastFeedback = () => {
   return (
@@ -18,17 +24,31 @@ export const HomeLastFeedback = () => {
       </div>
 
       <div className="w-full flex flex-col gap-4">
-        <h1 className="text-6xl">Отзывы </h1>
-        <h3 className="text-base text-gray-700 text-pretty">
+        <motion.h1
+          {...globalTextAppearanceConfig}
+          transition={globalTransitionConfig}
+          className="text-6xl"
+        >
+          Отзывы{" "}
+        </motion.h1>
+        <motion.h3
+          {...globalTextAppearanceConfig}
+          transition={{ ...globalTransitionConfig, delay: 0.4 }}
+          className="text-base text-gray-700 text-pretty"
+        >
           Здесь могли бы быть восторженные отзывы от довольных клиентов, но, как
-          вы понимаете, в ФПИ банке это редкость. Зато те, кто всё-таки оставил
+          вы понимаете, в ФCИ банке это редкость. Зато те, кто всё-таки оставил
           своё мнение, уже не могут пожаловаться — мы надёжно «забыли» их слова.
           Если вам есть что сказать, пишите, и мы постараемся сделать вид, что
           прочитали!
-        </h3>
+        </motion.h3>
       </div>
 
-      <div className="overflow-hidden h-[360px] relative group">
+      <motion.div
+        {...globalAppearanceConfig}
+        transition={globalTransitionConfig}
+        className="overflow-hidden h-[360px] relative group"
+      >
         <img
           className="block max-w-full h-auto shrink-0"
           src="/src/common/images/feedback/feedback.png"
@@ -40,7 +60,7 @@ export const HomeLastFeedback = () => {
           src="/src/common/images/feedback/feedback_evil.png"
           alt="feedback_evil"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

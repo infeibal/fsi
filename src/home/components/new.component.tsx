@@ -19,7 +19,7 @@ export const HomeNew = () => {
         <div className="flex flex-col gap-0">
           <h1 className="text-4xl font-semibold">Новая карта</h1>
           <GradientText
-            colors={["#7e47be", "#9b5db6", "#5e2d8c", "#9b5db6", "#7e47be"]}
+            colors={["#7e47be", "#9b5db6", "#6f35a6", "#9b5db6", "#7e47be"]}
             animationSpeed={3}
             showBorder={false}
             className="text-5xl font-bold"
@@ -92,7 +92,7 @@ export const HomeNew = () => {
           showTooltip={false}
           rotateAmplitude={7}
           scaleOnHover={1.05}
-          imageSrc="/src/common/images/new_card.png"
+          imageSrc="/src/common/images/new_card2.png"
         />
       </div>
     </motion.section>
