@@ -1,6 +1,22 @@
+import { ScrollVelocity } from "../../common/components/scroll-velocity.component";
+
 export const HomeLastFeedback = () => {
   return (
     <section className="mt-40 max-w-fit flex flex-col items-center px-32">
+      <div className=" mb-12 w-screen min-w-screen">
+        <ScrollVelocity
+          texts={[
+            "Ваши средства — наш комфорт!",
+            "ФСИ Банк — когда надежность не важна!",
+          ]}
+          className="text-2xl font-semibold"
+          scrollerClassName="w-full"
+          velocity={80}
+          numCopies={23}
+          velocityMapping={{ input: [0, 1000], output: [0, 2] }}
+        />
+      </div>
+
       <div className="w-full flex flex-col gap-4">
         <h1 className="text-6xl">Отзывы </h1>
         <h3 className="text-base text-gray-700 text-pretty">

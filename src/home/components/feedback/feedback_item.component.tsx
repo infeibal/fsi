@@ -30,11 +30,11 @@ export const FeedbackItem = ({
         alt="feedback_card"
       />
 
-      <p className="absolute top-8 flex items-center justify-center text-black p-9 text-start overflow-hidden">
+      <p className="absolute top-8 flex items-center justify-center text-black p-9 text-start overflow-hidden group-hover:scale-105 duration-300">
         “{text}”
       </p>
 
-      <h3 className="font-bold absolute bottom-10 left-32">
+      <h3 className="font-bold absolute bottom-10 left-32 group-hover:scale-105 duration-300">
         {formattedAuthor[0]} <br /> {formattedAuthor[1]}
       </h3>
 
