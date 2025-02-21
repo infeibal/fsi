@@ -5,6 +5,7 @@ import { Roadmap } from "../../roadmap/roadmap.component";
 import { Making } from "../../making/making.component";
 import { Converter } from "../../converter/converter";
 import { Secret } from "../../secret/secret.component";
+import { PageNotFound } from "../components/page-not-found.component";
 
 export const Routing = () => {
   return (
@@ -20,6 +21,8 @@ export const Routing = () => {
           <Route path="/converter" element={<Converter />} />
 
           <Route path="/secret" element={<Secret />} />
+
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
