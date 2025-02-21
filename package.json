@@ -1,7 +1,6 @@
 {
   "name": "fsi-bank",
   "version": "0.1",
-  "homepage": "https://infeibal.github.io/fsi-bank",
   "type": "module",
   "scripts": {
     "predeploy": "yarn run build",
