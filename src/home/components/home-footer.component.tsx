@@ -1,12 +1,10 @@
+import FooterLogo from "../../common/images/footer_logo.svg";
+
 export const HomeFooter = () => {
   return (
     <footer id="contacts" className="bg-system-purple w-full">
       <div className="mx-auto max-w-[1100px] flex flex-col px-[3rem]">
-        <img
-          className="h-12 w-min my-6"
-          src="/src/common/images/footer_logo.svg"
-          alt="footer_logo"
-        />
+        <img className="h-12 w-min my-6" src={FooterLogo} alt="footer_logo" />
 
         <section className="flex flex-col gap-4">
           <div className="flex gap-2 items-center">

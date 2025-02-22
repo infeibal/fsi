@@ -4,6 +4,7 @@ import {
   globalImgAppearanceConfig,
   globalTransitionConfig,
 } from "../../../common/config/animation.config";
+import FeedbackCardImg from "../../../common/images/feedback/feedback_card.svg";
 
 type FeedbackCardType = {
   text: string;
@@ -26,7 +27,7 @@ export const FeedbackItem = ({
     >
       <img
         className="w-full h-full group-hover:scale-[1.01] duration-300"
-        src="/src/common/images/feedback/feedback_card.svg"
+        src={FeedbackCardImg}
         alt="feedback_card"
       />
 

@@ -1,4 +1,7 @@
 import { FeedbackItem } from "./feedback_item.component";
+import FlowerOneImg from "../../../common/images/feedback/flower_one.svg";
+import FlowerTwoImg from "../../../common/images/feedback/flower_two.svg";
+import FlowerThreeImg from "../../../common/images/feedback/flower_three.svg";
 
 export const FeedBackList = () => {
   return (
@@ -10,7 +13,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-20px] bottom-[-3px] w-[120px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_one.svg"
+            src={FlowerOneImg}
             alt="flower_one"
           />
         }
@@ -22,7 +25,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-40px] bottom-[-45px] w-[149px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_two.svg"
+            src={FlowerTwoImg}
             alt="flower_two"
           />
         }
@@ -34,7 +37,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-30px] bottom-[-30px] w-[128px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_three.svg"
+            src={FlowerThreeImg}
             alt="flower_three"
           />
         }
@@ -46,7 +49,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-20px] bottom-[-3px] w-[120px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_one.svg"
+            src={FlowerOneImg}
             alt="flower_one"
           />
         }
@@ -58,7 +61,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-40px] bottom-[-45px] w-[149px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_two.svg"
+            src={FlowerTwoImg}
             alt="flower_two"
           />
         }
@@ -70,7 +73,7 @@ export const FeedBackList = () => {
         decoration={
           <img
             className="absolute left-[-30px] bottom-[-30px] w-[128px] group-hover:rotate-[-3deg] group-hover:scale-105 duration-300"
-            src="/src/common/images/feedback/flower_three.svg"
+            src={FlowerThreeImg}
             alt="flower_three"
           />
         }

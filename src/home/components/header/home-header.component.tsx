@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { HeaderNav } from "./header-nav.component";
 import { useEffect, useState } from "react";
+import LogoImg from "../../../common/images/logo.png";
 
 export const HomeHeader = () => {
   const navigate = useNavigate();
@@ -32,11 +33,7 @@ export const HomeHeader = () => {
   return (
     <header className="w-full max-w-[1100px] flex items-center mx-auto gap-40 justify-center py-4 px-0">
       <Link onClick={() => handleLinkClick("/")} to="/">
-        <img
-          src="/src/common/images/logo.png"
-          alt="logo"
-          className="select-none"
-        />
+        <img src={LogoImg} alt="logo" className="select-none" />
       </Link>
 
       <HeaderNav

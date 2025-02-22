@@ -3,20 +3,18 @@ import {
   globalAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import WaveImg from "../../common/images/wave.svg";
+import AddPhoneImg2 from "../../common/images/add_phone_image2.png";
 
 export const HomeAd = () => {
   return (
     <section>
-      <img
-        src="/src/common/images/wave.svg"
-        alt=""
-        className="select-none pointer-events-none"
-      />
+      <img src={WaveImg} alt="" className="select-none pointer-events-none" />
 
       <div className="flex gap-4 px-4 bg-system-purple items-center h-[500px] overflow-hidden relative">
         <div className="w-[447px] flex-shrink-0">
           <img
-            src="/src/common/images/add_phone_image2.png"
+            src={AddPhoneImg2}
             alt="phone_img"
             className="absolute top-1 max-w-none select-none pointer-events-none"
           />

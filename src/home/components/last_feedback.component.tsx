@@ -5,6 +5,8 @@ import {
   globalTextAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import FeedbackImg from "../../common/images/feedback/feedback.png";
+import FeedbackEvilImg from "../../common/images/feedback/feedback_evil.png";
 
 export const HomeLastFeedback = () => {
   return (
@@ -51,13 +53,13 @@ export const HomeLastFeedback = () => {
       >
         <img
           className="block max-w-full h-auto shrink-0"
-          src="/src/common/images/feedback/feedback.png"
+          src={FeedbackImg}
           alt="feedback"
         />
 
         <img
           className="group-hover:opacity-100 opacity-0 duration-500 top-0 absolute z-[9] block max-w-full h-auto shrink-0"
-          src="/src/common/images/feedback/feedback_evil.png"
+          src={FeedbackEvilImg}
           alt="feedback_evil"
         />
       </motion.div>

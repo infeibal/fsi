@@ -4,6 +4,12 @@ import {
   globalTransitionConfig,
 } from "../../common/config/animation.config";
 import TiltedCard from "../../common/components/dancing-element.component";
+import ApplicationImgTwo from "../../common/images/application_two.svg";
+import ApplicationImgOne from "../../common/images/application_one.svg";
+import ApplicationPhoneImg from "../../common/images/application-phone.png";
+import WayImg from "../../common/images/way.svg";
+import FieldImg from "../../common/images/field.svg";
+import PenImg from "../../common/images/pen.svg";
 
 export const HomeApplication = () => {
   return (
@@ -13,7 +19,7 @@ export const HomeApplication = () => {
           {...globalImgAppearanceConfig("x", -150, 0)}
           transition={{ ...globalTransitionConfig, duration: 1.5 }}
           className="select-none z-[0] pointer-events-none opacity-80 absolute w-[230px] top-[-32px] left-10"
-          src="/src/common/images/application_two.svg"
+          src={ApplicationImgTwo}
           alt="app_back"
         />
 
@@ -21,7 +27,7 @@ export const HomeApplication = () => {
           {...globalImgAppearanceConfig("x", 150, 0)}
           transition={{ ...globalTransitionConfig, duration: 1.5 }}
           className="select-none z-[0] pointer-events-none opacity-80 absolute w-[180px] h-[127px] bottom-16 right-10"
-          src="/src/common/images/application_one.svg"
+          src={ApplicationImgOne}
           alt="app_back"
         />
 
@@ -31,7 +37,7 @@ export const HomeApplication = () => {
             rotateAmplitude={4}
             scaleOnHover={1.01}
             altText="application_image"
-            imageSrc="/src/common/images/application-phone.png"
+            imageSrc={ApplicationPhoneImg}
           />
         </div>
       </div>
@@ -51,33 +57,21 @@ export const HomeApplication = () => {
 
         <div className="flex justify-between">
           <div className="flex gap-3 ">
-            <img
-              className="w-[32px]"
-              src="/src/common/images/way.svg"
-              alt="way"
-            />
+            <img className="w-[32px]" src={WayImg} alt="way" />
 
             <span className="text-sm leading-4 w-min block">
               Запутанный интерфейс
             </span>
           </div>
           <div className="flex gap-3 ">
-            <img
-              className="w-[32px]"
-              src="/src/common/images/field.svg"
-              alt="way"
-            />
+            <img className="w-[32px]" src={FieldImg} alt="field" />
 
             <span className="text-sm leading-4 w-min block">
               Автоматические Сборы
             </span>
           </div>
           <div className="flex gap-3 ">
-            <img
-              className="w-[32px]"
-              src="/src/common/images/pen.svg"
-              alt="way"
-            />
+            <img className="w-[32px]" src={PenImg} alt="pen" />
 
             <span className="text-sm leading-4 w-min block">
               Абсурдный Дизайн

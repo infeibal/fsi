@@ -7,6 +7,10 @@ import {
 } from "../../common/config/animation.config";
 import { GradientText } from "../../common/components/gradient-text.component";
 import TiltedCard from "../../common/components/dancing-element.component";
+import ChainImg from "../../common/images/chain.svg";
+import LockImg from "../../common/images/lock.svg";
+import SurpriseImg from "../../common/images/surprise.svg";
+import NewCardImg2 from "../../common/images/new_card2.png";
 
 export const HomeNew = () => {
   return (
@@ -43,29 +47,17 @@ export const HomeNew = () => {
             className="flex flex-col gap-3 w-1/2 leading-4"
           >
             <div className="flex gap-2 items-center">
-              <img
-                className="w-[32px]"
-                src="/src/common/images/chain.svg"
-                alt="chain_img"
-              />
+              <img className="w-[32px]" src={ChainImg} alt="chain_img" />
               <p>Запутано и Нервозно</p>
             </div>
             <div className="flex gap-2 items-center">
-              <img
-                className="w-[32px]"
-                src="/src/common/images/lock.svg"
-                alt="lock_img"
-              />
+              <img className="w-[32px]" src={LockImg} alt="lock_img" />
               <p>
                 Каждый платеж <br />— интрига!
               </p>
             </div>
             <div className="flex gap-2 items-center">
-              <img
-                className="w-[32px]"
-                src="/src/common/images/surprise.svg"
-                alt="surprise_img"
-              />
+              <img className="w-[32px]" src={SurpriseImg} alt="surprise_img" />
               <p>Неожиданные комиссии</p>
             </div>
           </motion.div>
@@ -92,7 +84,7 @@ export const HomeNew = () => {
           showTooltip={false}
           rotateAmplitude={7}
           scaleOnHover={1.05}
-          imageSrc="/src/common/images/new_card2.png"
+          imageSrc={NewCardImg2}
         />
       </div>
     </motion.section>

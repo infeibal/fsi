@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { HomeLayout } from "../../home/home-layout";
 import { HomeModule } from "../../home/home-module";
 import { Roadmap } from "../../roadmap/roadmap.component";
@@ -9,7 +9,7 @@ import { PageNotFound } from "../components/page-not-found.component";
 
 export const Routing = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<HomeLayout />}>
           <Route path="/" element={<HomeModule />} />
@@ -25,6 +25,6 @@ export const Routing = () => {
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };

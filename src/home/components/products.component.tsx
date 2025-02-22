@@ -7,6 +7,11 @@ import {
   globalTransitionConfig,
 } from "../../common/config/animation.config";
 import { Magnet } from "../../common/components/magnet.component";
+import Card1 from "../../common/images/cards/products_card1.png";
+import Card2 from "../../common/images/cards/products_card2.png";
+import Card3 from "../../common/images/cards/products_card3.png";
+import Card4 from "../../common/images/cards/products_card4.png";
+import Circle from "../../common/images/circle.png";
 
 export const HomeProducts = () => {
   return (
@@ -39,7 +44,7 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="/src/common/images/cards/products_card1.png"
+                src={Card1}
                 alt="products_card"
               />
             </Magnet>
@@ -66,11 +71,7 @@ export const HomeProducts = () => {
               maxSize={650}
               className="rounded-full flex items-center justify-center text-white font-bold"
             >
-              <img
-                className="w-full"
-                src="/src/common/images/circle.png"
-                alt="circle"
-              />
+              <img className="w-full" src={Circle} alt="circle" />
             </GrowingElement>
           </div>
         </div>
@@ -80,7 +81,7 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="/src/common/images/cards/products_card2.png"
+                src={Card2}
                 alt="products_card2"
               />
             </Magnet>
@@ -106,11 +107,7 @@ export const HomeProducts = () => {
               maxSize={700}
               className="rounded-full flex items-center justify-center text-white font-bold"
             >
-              <img
-                className="w-full"
-                src="/src/common/images/circle.png"
-                alt="circle"
-              />
+              <img className="w-full" src={Circle} alt="circle" />
             </GrowingElement>
           </div>
         </div>
@@ -120,7 +117,7 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover"
-                src="/src/common/images/cards/products_card3.png"
+                src={Card3}
                 alt="products_card3"
               />
             </Magnet>
@@ -148,11 +145,7 @@ export const HomeProducts = () => {
               maxSize={600}
               className="rounded-full flex items-center justify-center text-white font-bold"
             >
-              <img
-                className="w-full"
-                src="/src/common/images/circle.png"
-                alt="circle"
-              />
+              <img className="w-full" src={Circle} alt="circle" />
             </GrowingElement>
           </div>
         </div>
@@ -162,7 +155,7 @@ export const HomeProducts = () => {
             <Magnet padding={0} magnetStrength={30}>
               <img
                 className="select-none pointer-events-none w-full h-full object-cover "
-                src="/src/common/images/cards/products_card4.png"
+                src={Card4}
                 alt="products_card4"
               />
             </Magnet>
@@ -188,11 +181,7 @@ export const HomeProducts = () => {
               maxSize={700}
               className="rounded-full flex items-center justify-center text-white font-bold"
             >
-              <img
-                className="w-full"
-                src="/src/common/images/circle.png"
-                alt="circle"
-              />
+              <img className="w-full" src={Circle} alt="circle" />
             </GrowingElement>
           </div>
         </div>

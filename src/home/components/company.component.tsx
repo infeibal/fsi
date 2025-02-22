@@ -4,11 +4,12 @@ import {
   globalImgAppearanceConfig,
   globalTransitionConfig,
 } from "../../common/config/animation.config";
+import WaveTwoImg from "../../common/images/wave_two.svg";
 
 export const HomeCompany = () => {
   return (
     <section>
-      <img src="/src/common/images/wave_two.svg" alt="wave" />
+      <img src={WaveTwoImg} alt="wave" />
 
       <div className="flex flex-col gap-10 bg-system-pink w-full pb-10 px-4">
         <motion.h1
